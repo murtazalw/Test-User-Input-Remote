@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:gravity="center"
+    android:background="#9FF781">
+<TextView        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"        
+        android:text="@string/date_of_match" />
+    <TextView
+        android:id="@+id/current_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" 
+        />
+    
+    <EditText
+android:id="@+id/team_1"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:paddingRight="35dip"
+android:hint="@string/hint_team_name"
+android:inputType="text" 
+/>   
+ 
+    <TextView
+        android:id="@+id/text_vs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"        
+        android:text="@string/text_versus" />
+    
+    <EditText
+android:id="@+id/team_2"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:paddingRight="35dip"
+android:hint="@string/hint_team_name" 
+android:inputType="text"
+/>
+    
+    <Button
+        android:id="@+id/button_start_match"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"       
+        android:text="@string/start_match" 
+        android:onClick="submitTeam"
+        android:background="@drawable/rectangle"/>
+
+</LinearLayout>

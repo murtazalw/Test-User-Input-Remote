@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:gravity="center"
+    android:background="#9FF781">
+
+    <Spinner
+    android:id="@+id/teams_spinner"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    
+    
+    <EditText
+android:id="@+id/edit_text_inputPlayer"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:paddingRight="35dip"
+android:hint="@string/hint_player_name" 
+/>   
+ 
+    <Button
+        android:id="@+id/button_add_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:text="@string/button_add_Player" />
+    
+    <!-- <com.example.testuserinput.ClearableEditText
+android:id="@+id/clearble_edit_text_inputSearch"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content" 
+/>-->
+    
+    <TabWidget android:id="@android:id/tabs"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		<FrameLayout android:id="@android:id/tabcontent"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<ListView android:id="@+id/listview" android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+			</ListView>
+			<ListView android:id="@+id/listview2" android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+			</ListView>
+		</FrameLayout>
+
+</LinearLayout>
